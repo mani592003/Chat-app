@@ -23,14 +23,14 @@ const server = http.createServer(app);
 // server.js
 const io = new Server(server, {
   cors: {
-    origin: process.env.CLIENT_URL || "http://localhost:3000", // Allow deployed URL or localhost
+    origin: process.env.CLIENT_URL || "https://chat-app-taupe-nine-89.vercel.app/", // Allow deployed URL or localhost
     credentials: true,
   },
 });
 
 // Also update the Express CORS middleware if needed (optional but good practice)
 app.use(cors({ 
-  origin: process.env.CLIENT_URL || "http://localhost:3000", 
+  origin: process.env.CLIENT_URL || "https://chat-app-taupe-nine-89.vercel.app/", 
   credentials: true 
 }));
 
