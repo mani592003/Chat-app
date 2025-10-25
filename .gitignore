@@ -1,0 +1,19 @@
+# === Node Dependencies ===
+client/node_modules
+server/node_modules
+
+# === Build Output ===
+client/build
+server/dist
+
+# === Environment Files ===
+client/.env
+server/.env
+.env
+
+# === Logs ===
+*.log
+
+# === System Files ===
+.DS_Store
+Thumbs.db
