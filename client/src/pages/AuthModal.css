@@ -1,0 +1,242 @@
+/* src/pages/AuthModal.css */
+/* This file styles both AuthModal and LobbyModal */
+
+/* --- Modal Overlay --- */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* --- Auth Forms --- */
+.form-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #555;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.error-message {
+  color: #d32f2f;
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+
+.auth-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.auth-button:hover {
+  background-color: #0056b3;
+}
+
+.toggle-auth {
+  font-size: 14px;
+  color: #666;
+}
+
+.toggle-auth button {
+  background: none;
+  border: none;
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0 5px;
+  font-size: 14px;
+}
+
+.toggle-auth button:hover {
+  text-decoration: underline;
+}
+
+/* --- Lobby Styles --- */
+.lobby-modal {
+  text-align: center;
+}
+
+.lobby-modal p {
+  font-size: 16px;
+  color: #555;
+}
+
+.room-count {
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.room-count strong {
+  font-size: 1.5em;
+  color: #0056b3;
+}
+
+.create-room-btn {
+  background-color: #28a745;
+  color: white;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.create-room-btn:hover {
+  background-color: #218838;
+}
+
+.divider {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 20px 0;
+}
+
+.join-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.join-form label {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.join-form .chat-input {
+  text-align: center;
+  font-size: 16px;
+}
+
+.join-form .chat-button {
+  font-size: 16px;
+}
+
+/* --- Guest Login Styles --- */
+.guest-login-section h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #444;
+  font-weight: 600;
+}
+
+.auth-button.guest-button {
+  background-color: #28a745;
+}
+
+.auth-button.guest-button:hover {
+  background-color: #218838;
+}
+
+/* --- My Rooms List Styles --- */
+.my-rooms-section h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #444;
+  font-weight: 600;
+}
+
+.my-rooms-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 150px;
+  overflow-y: auto;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Container for each room row */
+.room-list-item {
+  display: flex;
+  gap: 5px;
+}
+
+/* Join button */
+.room-list-join-btn {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  flex: 1;
+}
+
+.room-list-join-btn:hover {
+  background-color: #5a6268;
+}
+
+/* Delete button */
+.room-list-delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 0 12px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  flex-basis: 40px;
+}
+
+.room-list-delete-btn:hover {
+  background-color: #c82333;
+}
+
+.room-list-note {
+  font-size: 12px;
+  color: #777;
+  margin-top: 10px;
+}
