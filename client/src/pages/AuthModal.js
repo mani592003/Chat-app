@@ -27,8 +27,8 @@ export default function AuthModal({ onAuthSuccess, onGuestLogin }) {
       //? "http://localhost:5000/api/auth/login"
       //: "http://localhost:5000/api/auth/register";
       const url = isLogin
-      ? "https://chating-app-backend.onrender.com/api/auth/login"
-      : "https://chating-app-backend.onrender.com/api/auth/register";
+      ? "https://chat-app-server-iupy.onrender.com/api/auth/login"
+      : "https://chat-app-server-iupy.onrender.com/api/auth/register";
       
     try {
       if (isLogin) {
