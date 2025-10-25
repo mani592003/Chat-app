@@ -7,7 +7,7 @@ import LobbyModal from "./LobbyModal";
 
 //const socket = io("http://localhost:5000");//
 // Use https if your Render URL starts with https
-const socket = io("https://chating-app-backend.onrender.com");
+const socket = io("https://chat-app-server-iupy.onrender.com");
 
 const getRandomColor = () => {
   const colors = ["#FF6B6B", "#6BCB77", "#4D96FF", "#FFD93D", "#AA96DA", "#F67280", "#45CB85"];
